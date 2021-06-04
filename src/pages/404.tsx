@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import styled from 'styled-components'
+import units from "design-units"
 
 // styles
 const pageStyles = {
@@ -13,7 +14,10 @@ const Heading = styled.div`
   margin-top: 0;
   margin-bottom: 64;
   max-width: 320;
-  outline: 1px solid red;
+  ${units({
+  outline: ["1px solid red", "1px solid blue"]
+})};
+  // outline: 1px solid red;
 `
 
 const paragraphStyles = {
@@ -27,10 +31,10 @@ const NotFoundPage = () => {
       <title>Not found</title>
       <Heading>Page not found</Heading>
       <p style={paragraphStyles}>
-        Sorry{" "}
+        Sorry
         <span role="img" aria-label="Pensive emoji">
           😔
-        </span>{" "}
+        </span>
         we couldn’t find what you were looking for.
         <br />
         <Link to="/">Go home</Link>.
