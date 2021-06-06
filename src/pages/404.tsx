@@ -10,13 +10,15 @@ const pageStyles = {
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 
+
+
 const Heading = styled.div`
   margin-top: 0;
   margin-bottom: 64;
   max-width: 320;
   ${units({
-  outline: ["1px solid red", "1px solid blue"]
-})};
+    outline: ["1px solid red", "1px solid blue"]
+  })};
   // outline: 1px solid red;
 `
 
